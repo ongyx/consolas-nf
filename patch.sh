@@ -16,7 +16,7 @@ cp $FONTS/consola* $tmp
 
 for font in $tmp/consola*; do
   echo "patching $font"
-  nerd-fonts/font-patcher -swc --outputdir . "$font"
+  nerd-fonts/font-patcher -sc --outputdir . "$font"
 done
 
 echo "patched all fonts"
